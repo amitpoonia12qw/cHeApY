@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#81a3d0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".upload_item_Activity"
+        android:orientation="vertical"
+        android:id="@+id/id_upload_item_linear_layout1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingStart="5dp"
+            android:hint="Product Name"
+            android:id="@+id/id_edt_product_name"
+            android:maxLines="2"
+            android:inputType="text"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:id="@+id/id_edt_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:hint="Product's Price in Rupees"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/edit_text_style" />
+
+            <EditText
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:hint="Quantity"
+                android:id="@+id/id_edt_product_quantity"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/edit_text_style" />
+        </LinearLayout>
+
+        <EditText
+            android:paddingStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="start"
+            android:id="@+id/id_edt_product_description"
+            android:hint="Product's Description"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/id_img_uploaded_photo1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.30"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/id_img_uploaded_photo2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.30"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/id_img_uploaded_photo3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.30"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/id_btn_upload_product_data"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="visible"
+            android:text="upload"/>
+
+    </LinearLayout>
+
+</ScrollView>

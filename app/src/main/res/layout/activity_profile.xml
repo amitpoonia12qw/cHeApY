@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/id_headLayout_in_profile_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/id_user_icon_in_profileActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_icon"
+                tools:ignore="contentDescription"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/id_txt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                android:text="User Name"
+                android:textColor="#0000FF"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email -"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/textView21"
+                    android:id="@+id/id_txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="johndoe123@xyz.com"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:layout_toRightOf="@+id/textView21"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/id_edit_email"
+                    android:maxLines="1"
+                    android:inputType="text "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No."
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_toEndOf="@+id/textView8"
+                android:id="@+id/id_txt_mobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="9781702079"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/id_edit_mobile_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/textView8"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store Name"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_toEndOf="@+id/textView9"
+                android:id="@+id/id_txt_storeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalsi Shop"
+                android:layout_marginStart="20dp"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/id_edit_store_name"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textView9"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store Location"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/id_txt_storeAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Rupnagar 140001, Panjab, India"
+                android:layout_toEndOf="@+id/textView10"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:id="@+id/id_edit_store_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/cyan"
+                android:layout_toEndOf="@+id/textView10"
+                android:text="choose on map"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:id="@+id/id_txt_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:showDividers="beginning"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available Products"
+                    android:textColor="#800000"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="1456"
+                    android:textColor="#800000"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Sold Products"
+                    android:textColor="#800000"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"/>
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="478"
+                    android:textColor="#800000"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_key"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/id_txt_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Change Paddword"
+            android:textColor="#0000FF"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_delete"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/id_txt_delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Delete Account"
+                android:textColor="#0000FF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/id_btn_logout"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history_Activity"
+    android:layout_gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Recently uploaded or Sold or bought products will be displayed here"
+        android:textSize="@dimen/size_20sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="italic|bold"/>
+
+</android.support.constraint.ConstraintLayout>

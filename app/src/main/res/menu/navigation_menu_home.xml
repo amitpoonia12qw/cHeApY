@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/id_group1">
+        <item android:id="@+id/id_nav_my_items"
+            android:icon="@drawable/ic_my_items"
+            android:title="My Items" />
+        <item android:id="@+id/id_nav_upload_items"
+            android:icon="@drawable/ic_upload_item"
+            android:title="Upload Items" />
+        <item android:id="@+id/id_nav_log_out"
+            android:icon="@drawable/ic_log_out"
+            android:title="Log Out" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/id_group2">
+        <item android:id="@+id/id_settings"
+            android:icon="@drawable/setting_icon"
+            android:title="Setting" />
+        <item android:id="@+id/id_history"
+            android:title="History"
+            android:icon="@drawable/ic_history_black_24dp"/>
+        <item android:id="@+id/id_help_feedback"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Help and feedback" />
+    </group>
+
+    <group
+        android:id="@+id/id_group3">
+        <item android:title="Are you a Shop-Manager?">
+            <menu>
+                <item android:id="@+id/id_nav_login"
+                    android:title="Login" />
+                <item android:id="@+id/id_nav_new_account"
+                    android:title="Create new Account" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

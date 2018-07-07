@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/id_header_layout1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/cheapy_logo"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:focusable="true">
+
+
+    <ImageView
+        android:id="@+id/id_nav_header_user_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/user_icon"
+        android:visibility="invisible"
+        android:layout_gravity="center_vertical"/>
+
+    <!--android:src="@drawable/user_icon"-->
+
+
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/id_header_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        android:textStyle="bold|italic"/>
+
+
+
+
+
+</LinearLayout>

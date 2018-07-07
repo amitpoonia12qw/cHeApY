@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="myTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="colorPrimary">#ffffff</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+</resources>
